@@ -6,18 +6,18 @@ import Row from "./Row";
 import requests from "./Request";
 
 function HomeScreen() {
+
   const [scrolling, setScrolling] = useState(false);
+  const [transparentBackground, setTransparentBackground] = useState(true);
+
   useEffect(() => {
     let scrollTimeout; // Declare scrollTimeout here
 
     const handleScroll = () => {
-      if (!scrolling) {
-        setScrolling(true);
-        clearTimeout(scrollTimeout);
-      }
+      setScrolling(true);
+      setTransparentBackground(window.scrollY < 100);
 
       clearTimeout(scrollTimeout);
-
       scrollTimeout = setTimeout(() => {
         setScrolling(false);
       }, 500); // Adjust the delay as needed
@@ -29,10 +29,11 @@ function HomeScreen() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [scrolling]);
+  
   return (
     <div className="homeScreen">
       {/* Nav */}
-      {scrolling ? null : <Nav />}
+      <Nav show={!scrolling} transparent={transparentBackground}/>
       <Banner />
 
       <Row

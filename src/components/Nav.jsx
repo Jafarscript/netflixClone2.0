@@ -1,20 +1,27 @@
-import React, {useState} from "react";
+import React from "react";
 import "./Nav.css";
-function Nav() {
-  const [show, handleShow] = useState(false);
+function Nav({ show, transparent }) {
 
-  const toggleNavbar = () => {
-    if (window.scrollY < 100) {
-      handleShow(true);
-    } else {
-      handleShow(false);
-    }
+  const navStyle = {
+    background: transparent ? "transparent" : "black",
+    opacity: show ? 1 : 0,
   };
-   window.addEventListener("scroll", toggleNavbar); 
+
+  
+  // const [show, handleShow] = useState(false);
+
+  // const toggleNavbar = () => {
+  //   if (window.scrollY < 100) {
+  //     handleShow(true);
+  //   } else {
+  //     handleShow(false);
+  //   }
+  // };
+  //  window.addEventListener("scroll", toggleNavbar); 
 
 
   return (
-    <div className={` nav  ${show && "nav_black"}`}>
+    <div className="nav" style={navStyle}>
       <div className="navContent">
         <img
           src="https://res.cloudinary.com/dvo8xhx6r/image/upload/v1688247966/3HCWZMP7PFGY3OJJPFHIX5O2VI_xzmxgm.png"
