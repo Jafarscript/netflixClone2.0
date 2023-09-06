@@ -1,22 +1,18 @@
-import React, { useEffect, useState } from "react";
+import React, {useState} from "react";
 import "./Nav.css";
 function Nav() {
   const [show, handleShow] = useState(false);
 
-  const toogleNavbar = () => {
-    if(window.scrollY > 100){
-      handleShow(true)
-    } else{
-      handleShow(false)
+  const toggleNavbar = () => {
+    if (window.scrollY < 100) {
+      handleShow(true);
+    } else {
+      handleShow(false);
     }
-  }
+  };
+   window.addEventListener("scroll", toggleNavbar); 
 
-  useEffect(() => {
-    window.addEventListener("scroll", toogleNavbar);
-    return () => {window.removeEventListener("scroll", toogleNavbar)
-    console.log(show)
-  };  
-  }, [show])
+
   return (
     <div className={` nav  ${show && "nav_black"}`}>
       <div className="navContent">
