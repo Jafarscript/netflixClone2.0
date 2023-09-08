@@ -16,6 +16,10 @@ const Login = () => {
           <h1>Unlimited films, TV programme and more.</h1>
           <h4>Watch anywhere. Cancel anytime</h4>
           <p>Ready to watch? Enter your emial to create or restart your membership</p>
+          <form>
+            <input type="email" placeholder="Email Address" />
+            <button>{`Get Started >`}</button>
+          </form>
       </div>
     </div>
   );
