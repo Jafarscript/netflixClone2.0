@@ -1,0 +1,62 @@
+.login{
+    height: 100vh;
+    position: relative;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%),url('https://res.cloudinary.com/dvo8xhx6r/image/upload/v1694210485/netflix_izgr9m.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* .login_header{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+} */
+
+
+.loginLogo{
+    width: 150px;
+    position: absolute;
+    left: 20px;
+    cursor: pointer;
+    object-fit: contain;
+}
+
+.signup_button{
+    position: absolute;
+    top: 25px;
+    right: 40px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #E50914;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+.login_body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+    gap: 20px;
+}
+
+.login_body h1{
+    font-size: 3.125rem;
+}
+
+.login_body h4{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.login_body p{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
