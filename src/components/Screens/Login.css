@@ -65,26 +65,33 @@
 }
 
 .login_body form{
-    display: flex;
-    align-items: center;
     /* text-align: center; */
-    max-width: 100%;
-    background-color: #fff;
-    /* width: 50%; */
+    display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .login_body form button{
-    padding: 10px 20px;
+    padding: 16px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #E50914;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    /* padding: 10px 20px;
     font-weight: 400;
     height: 110%;
-    background-color: #E50914;
+    background-color: #E50914; */
 }
 
 .login_body form input{
     /* height: 100%; */
     border: none;
     outline: none;
-    height: 100%;
-    /* width: ; */
+    height: 30px;
+    padding: 10px;
+    max-width: 600px;
+    width: 35%;
 }
+
