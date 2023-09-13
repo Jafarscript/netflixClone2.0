@@ -10,14 +10,18 @@ import { onAuthStateChanged } from "firebase/auth";
 function App() {
   const [user, setUser] = useState(false);
   useEffect(() => {
-    onAuthStateChanged(auth, (user) => {
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
         // logged in
-        
+
       } else {
         // logged out
       }
     })
+
+    return () => {
+      unsubscribe();
+    }
   }, [])
   
   return (
