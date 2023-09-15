@@ -28,7 +28,7 @@ function HomeScreen() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [scrolling]);
+  }, []);
   
   return (
     <div className="homeScreen">
