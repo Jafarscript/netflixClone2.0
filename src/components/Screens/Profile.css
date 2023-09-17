@@ -1,0 +1,107 @@
+.profile{
+    height: 100vh;
+    color: white;
+    overflow: hidden;
+}
+
+.profile_body{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    padding-top: 8%;
+}
+
+.profile_body h1{
+    font-size: 60px;
+    font-weight: 400;
+    border-bottom: 1px solid #282c28;
+    margin-bottom: 20px;
+}
+
+.profile_info{
+    display: flex;
+}
+
+.profile_info img{
+    height: 100px;
+}
+
+.profile_details{
+    flex: 1;
+    color: white;
+    margin-left: 25px;
+}
+
+.profile_details h2{
+    background-color: gray;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 400;
+    padding-left: 20px;
+}
+
+.profile_details .btn_signout{
+    padding: 10px 20px;
+    font-size: 1rem;
+    width: 100%;
+    margin-top: 5%;
+    color: #fff;
+    background-color: #E50914;
+    border: none;
+    outline: none;
+    font-weight: 600;
+}
+
+.profile_plan{
+    margin-top: 20px;
+}
+
+.profile_plan h3{
+    border-bottom: 1px solid #282c28;
+    padding-bottom: 10px;
+}
+
+.renew{
+    font-weight: 500;
+    margin: 20px 0px;
+}
+
+.plans{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+}
+
+.eachPlan{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.planName h5{
+    margin-bottom: 5px;
+}
+
+.subscribe{
+    padding: 10px;
+    border: none;
+    background-color: #E50914;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.subscribed{
+    padding: 10px;
+    border: none;
+    background-color: gray;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
